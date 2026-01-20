@@ -7,7 +7,7 @@ Lab 3 - Jasmeen Sandhu, Augustin Nguyen, Maksym Buhai
 2. Unzip the file: `unzip awscliv2.zip`
 3. Install AWS CLI to `/usr/local/bin`:
         
-        `sudo ./aws/install`
+        sudo ./aws/install
         
 4. Creating IAM User
     1. Go to IAM Console → User → Create user
@@ -27,7 +27,7 @@ Lab 3 - Jasmeen Sandhu, Augustin Nguyen, Maksym Buhai
 
   ## Script 1 - import-key script
     
-    ```bash
+    bash
     #!/usr/bin/env bash
     
     set -eu
@@ -59,9 +59,7 @@ Lab 3 - Jasmeen Sandhu, Augustin Nguyen, Maksym Buhai
     # aws will generate errors, so I am just letting the aws cli handle error messages here
     aws ec2 import-key-pair --key-name "COMPLETE ME" --public-key-material fileb://${public_key_file} > key_data
     
-    ```
-    
-    - Change key-name to “bcitkey”
+- Change key-name to “bcitkey”
 
 ## Script 2 - create-bucket
 
