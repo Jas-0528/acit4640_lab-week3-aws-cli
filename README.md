@@ -61,6 +61,10 @@ Lab 3 - Jasmeen Sandhu, Augustin Nguyen, Maksym Buhai
     
 - Change key-name to “bcitkey”
 
+### References
+https://docs.aws.amazon.com/cli/latest/reference/ec2/import-key-pair.html#import-key-pair
+
+
 ## Script 2 - create-bucket
 
 ```bash
@@ -88,6 +92,9 @@ fi
 
 - Add create bucket command
 `aws s3api create-bucket --bucket "$bucket_name"  --create-bucket-configuration LocatLocationConstraint=us-west-2`
+
+### References
+https://docs.aws.amazon.com/cli/latest/reference/s3api/create-bucket.html
 
 ## Script 3 - create-ec2
 
@@ -182,3 +189,15 @@ echo "Public IP: $public_ip" >> instance_info
     ```
     
 - Write Instance ID and Public IP to file
+```bash
+echo "Instance ID: $instance_id" > instance_info
+echo "Public IP: $public_ip" >> instance_info
+```
+
+
+### References
+https://docs.aws.amazon.com/cli/latest/reference/ec2/start-instances.html
+https://docs.aws.amazon.com/cli/v1/userguide/cli-services-ec2-instances.html
+https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html
+https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html
+
