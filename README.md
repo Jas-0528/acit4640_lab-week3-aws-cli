@@ -197,7 +197,10 @@ echo "Public IP: $public_ip" >> instance_info
 
 ### References
 https://docs.aws.amazon.com/cli/latest/reference/ec2/start-instances.html
+
 https://docs.aws.amazon.com/cli/v1/userguide/cli-services-ec2-instances.html
+
 https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-images.html
+
 https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instances.html
 
