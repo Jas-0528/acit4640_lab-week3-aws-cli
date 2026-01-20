@@ -2,38 +2,27 @@
 Week 3 lab - create 3 scripts 
 
 Lab 3 - Jasmeen Sandhu, Augustin Nguyen, Maksym Buhai
-    1. Download the AWS CLI : `curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"`
-    2. Unzip the file: `unzip awscliv2.zip`
-    3. Install AWS CLI to `/usr/local/bin`:
+
+1. Download the AWS CLI : `curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"`
+2. Unzip the file: `unzip awscliv2.zip`
+3. Install AWS CLI to `/usr/local/bin`:
         
         `sudo ./aws/install`
         
-    4. Creating IAM User
-        1. Go to IAM Console → User → Create user
-        2. User name - acit4640-user, no need to provide AWS Management Console
-            
-            ![image.png](attachment:139ee538-7723-48a2-bb3f-b0463d60313a:image.png)
-            
-        3. Set permissions - Attach policies directly → AdministratorAccess
-            
-            ![image.png](attachment:bb3534cf-e717-4838-b8b1-0adfcb69b97a:image.png)
-            
-        4. Create User
-        5. Select the User → Security Credentials 
-        6. Create access key 
-            - CLI: Will give an Alternatives Recommended ⇒ ignore this since we are not using this for production for real users
+4. Creating IAM User
+    1. Go to IAM Console → User → Create user
+    2. User name - acit4640-user, no need to provide AWS Management Console
+    3. Set permissions - Attach policies directly → AdministratorAccess
+    4. Create User
+    5. Select the User → Security Credentials 
+    6. Create access key 
+       CLI: Will give an Alternatives Recommended ⇒ ignore this since we are not using this for production for real users
                 
-                ![image.png](attachment:468aae0c-51bd-42e6-ad09-84cbdba533c5:image.png)
-                
-            - Descriptions Tag: up to you
-            - Retrieve access keys
+       - Descriptions Tag: up to you
+        - Retrieve access keys
             
-            ![image.png](attachment:ee22fbfe-7874-49c2-8641-fd94828b2601:image.png)
-            
-    5. Configure AWS CLI: `aws configure --profile acit4640_admin`
-        - Provide access key, secret access key and default region
-        
-        ![image.png](attachment:f02fe65f-5b66-46f2-b58a-8f3165eb9521:image.png)
+5. Configure AWS CLI: `aws configure --profile acit4640_admin`
+   - Provide access key, secret access key and default region
         
 
   ## Script 1 - import-key script
